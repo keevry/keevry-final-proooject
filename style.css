@@ -1,0 +1,1642 @@
+/* =========================================
+   DECISION MAKER — SOFT LAVENDER + BLUSH
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #966492;
+}
+
+:root {
+
+    /* Main Colours */
+    --purple: #a78bca;
+    --purple-dark: #76558f;
+    --purple-light: #f2edf8;
+
+    --pink: #d9a0b9;
+    --pink-dark: #b97896;
+    --pink-light: #f9eef3;
+
+    /* Background */
+    --background: #fbfaff;
+    --white: #ffffff;
+
+    /* Text */
+    --text: #40384a;
+    --text-light: #817889;
+
+    /* Other Colours */
+    --green: #79b89a;
+    --green-light: #edf8f1;
+
+    --red: #d88989;
+    --red-light: #fbeeee;
+
+    --yellow: #d6ae68;
+    --yellow-light: #fbf5e8;
+
+    --border: #e9e1ee;
+
+    /* Shadows */
+    --shadow: 0 8px 25px rgba(100, 75, 120, 0.07);
+    --shadow-hover: 0 12px 30px rgba(100, 75, 120, 0.12);
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+
+    background: url("2026_08_28_0ep_Kleki\ \(1\).png") no-repeat;
+    background-size: cover;
+
+    color: var(--text);
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: rgb(159 122 161 / 96%);
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow:
+        0 3px 15px rgba(100, 75, 120, 0.05);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+nav h2 {
+
+    color: white;
+
+    font-size: 23px;
+
+    letter-spacing: -0.3px;
+}
+
+
+nav h2::before {
+
+    content: "✦ ";
+
+    color: var(--pink);
+}
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #fff1fa;;
+
+    font-weight: bold;
+
+    padding: 8px 4px;
+
+    transition: 0.25s ease;
+}
+
+
+nav a:hover {
+
+    color: var(--purple-dark);
+}
+
+
+/* =========================================
+   CONTAINERS & CARDS
+   ========================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+}
+
+
+.card {
+
+    background: rgba(254, 250, 255, 0.97);
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
+
+    margin-bottom: 30px;
+
+    transition: 0.25s ease;
+}
+
+
+.card:hover {
+
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+h1 {
+
+    color: var(--purple-dark);
+
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+
+h2 {
+
+    color: var(--purple-dark);
+}
+
+
+h3 {
+
+    color: var(lavender);
+}
+
+
+.subtitle {
+
+    color: var(--text-light);
+
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn,
+.continue,
+.new {
+
+    display: block;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a78bca,
+            #d6a4b9
+        );
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(150, 110, 160, 0.15);
+
+    transition: 0.25s ease;
+}
+
+
+.btn:hover,
+.continue:hover,
+.new:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(150, 110, 160, 0.20);
+}
+
+
+/* =========================================
+   HOMEPAGE
+   ========================================= */
+
+/* =========================================
+   HOMEPAGE
+   ========================================= */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    padding: 70px 8%;
+
+    min-height: 78vh;
+
+    background:
+        linear-gradient(
+            rgba(251, 250, 255, 0.35),
+            rgba(251, 250, 255, 0.35)
+        ),
+        url("2026_08_28_0ep_Kleki (1).png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HERO TEXT
+   ========================================= */
+
+.hero-text {
+    width: 52%;
+    max-width: 620px;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: left;
+}
+
+
+.hero-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: var(--purple-light);
+
+    color: var(--purple-dark) !important;
+
+    font-size: 12px !important;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.hero-text h1 {
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    margin-bottom: 22px;
+
+    letter-spacing: -2px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #76558f,
+            #b97896
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-text > p:not(.hero-label) {
+    max-width: 530px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    color: var(--text-light);
+}
+
+
+.hero-text .btn {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border-radius: 11px;
+}
+
+
+/* =========================================
+   HERO IMAGE / DECISION PREVIEW
+   ========================================= */
+
+.hero-image {
+    width: 430px;
+    height: 430px;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+
+/* soft circle behind the card */
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 390px;
+    height: 390px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--purple-light),
+            var(--pink-light)
+        );
+
+    opacity: 0.9;
+
+    z-index: -1;
+}
+
+
+/* =========================================
+   DECISION PREVIEW CARD
+   ========================================= */
+
+.decision-preview {
+    width: 370px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 45px rgba(100, 75, 120, 0.14);
+
+    transform: rotate(2deg);
+
+    transition: 0.3s ease;
+}
+
+
+.decision-preview:hover {
+    transform: rotate(0deg) translateY(-5px);
+
+    box-shadow:
+        0 25px 50px rgba(100, 75, 120, 0.18);
+}
+
+
+/* =========================================
+   PREVIEW HEADER
+   ========================================= */
+
+.preview-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+}
+
+
+.preview-header span:first-child {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+
+.preview-header h3 {
+    color: var(--purple-dark);
+
+    font-size: 19px;
+}
+
+
+.preview-dots {
+    color: var(--text-light);
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   PREVIEW OPTIONS
+   ========================================= */
+
+.preview-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border);
+
+    border-radius: 11px;
+
+    transition: 0.2s ease;
+}
+
+
+.preview-option:hover {
+    transform: translateX(3px);
+}
+
+
+.preview-option.selected {
+    background: var(--purple-light);
+
+    border-color: var(--purple);
+}
+
+
+.option-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--purple),
+            var(--pink)
+        );
+
+    color: white;
+}
+
+
+.option-info {
+    flex: 1;
+}
+
+
+.option-info strong {
+    display: block;
+
+    color: var(--text);
+
+    font-size: 13px;
+}
+
+
+.option-info small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+
+.option-score {
+    color: var(--purple-dark);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PREVIEW RESULT
+   ========================================= */
+
+.preview-result {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 17px;
+
+    padding: 13px;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--pink-light),
+            var(--purple-light)
+        );
+}
+
+
+.result-check {
+    width: 29px;
+    height: 29px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.preview-result strong {
+    display: block;
+
+    color: var(--purple-dark);
+
+    font-size: 12px;
+}
+
+
+.preview-result small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   HERO ANIMATION
+   ========================================= */
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.features {
+
+    padding: 70px 8%;
+
+    text-align: center;
+    background:url("2026_08_28_0f7_Kleki.png") no-repeat;
+    background-size: cover;
+  
+}
+
+
+.features h2 {
+
+    margin-bottom: 40px;
+
+    font-size: 32px;
+
+    color: var(--purple-dark);
+}
+
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.features .card {
+
+    width: 300px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+
+.features .card:hover {
+
+    transform: translateY(-6px);
+}
+
+
+.card h3 {
+
+    margin: 15px 0;
+
+    color: var(--pink-dark);
+}
+
+
+.card p {
+
+    color: var(--text-light);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #76558f,
+            #b97896
+        );
+
+    color: white;
+
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+label {
+
+    display: block;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #76558f;
+}
+
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid var(-#beb0c7);
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    background: #fcf4ff;
+
+    color: var(--text);
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: var(--purple);
+
+    box-shadow:
+        0 0 0 3px rgba(167, 139, 202, 0.12);
+}
+
+
+textarea {
+
+    resize: vertical;
+}
+
+
+/* =========================================
+   CREATE DECISION
+   ========================================= */
+
+.section {
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.section h2 {
+
+    margin-bottom: 15px;
+}
+
+
+.list {
+
+    margin-top: 15px;
+}
+
+
+.item {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+}
+
+
+.item input {
+
+    flex: 1;
+}
+
+
+button {
+
+    cursor: pointer;
+
+    border: none;
+}
+
+
+.addBtn {
+
+    background: var(--purple);
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 9px;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+    transition: 0.25s ease;
+}
+
+
+.addBtn:hover {
+
+    background: var(--purple-dark);
+
+    transform: translateY(-1px);
+}
+
+
+.removeBtn {
+
+    background: var(--red);
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 9px;
+
+    font-weight: bold;
+
+    transition: 0.25s ease;
+}
+
+
+.removeBtn:hover {
+
+    background: #c97575;
+}
+
+
+/* =========================================
+   COMPARE & SCORE
+   ========================================= */
+
+.weight-box {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f3fa,
+            #fcf3f6
+        );
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid var(--border);
+}
+
+
+.weight-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 15px 0;
+
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border-radius: 9px;
+}
+
+
+.weight-item input {
+
+    width: 100px;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--border);
+}
+
+
+th {
+
+    background:
+        linear-gradient(
+            135deg,
+            #bfa5dd,
+            #ddbae2
+        );
+
+    color: white;
+
+    padding: 15px;
+
+    font-weight: bold;
+}
+
+
+td {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid var(--border);
+
+    background: white;
+}
+
+
+tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+tr:hover td {
+
+    background: #fcf9fd;
+}
+
+
+td input {
+
+    width: 70px;
+
+    text-align: center;
+
+    padding: 8px;
+}
+
+
+/* =========================================
+   RESULT BOX
+   ========================================= */
+
+.result {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: var(#ffffff);
+
+    color: #ffffff;
+
+    border-radius: 11px;
+
+    font-weight: bold;
+
+    border-left: 5px solid var(#c7a8db);
+}
+
+
+/* =========================================
+   HISTORY
+   ========================================= */
+
+.search {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+
+    font-size: 16px;
+}
+
+
+.history-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #ebcdee
+        );
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 13px;
+
+    border-left: 5px solid var(--purple);
+
+    box-shadow:
+        0 4px 12px rgba(120, 90, 140, 0.05);
+
+    transition: 0.25s ease;
+}
+
+
+.history-item:hover {
+
+    transform: translateX(4px);
+
+    box-shadow:
+        0 7px 18px rgba(120, 90, 140, 0.09);
+}
+
+
+.info h3 {
+
+    color: var(--purple-dark);
+
+    margin-bottom: 8px;
+}
+
+
+.info p {
+
+    color: var(--text-light);
+
+    margin-top: 3px;
+}
+
+
+.result {
+
+    text-align: right;
+}
+
+
+.score {
+
+    color: var(--pink-dark);
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HISTORY BUTTONS
+   ========================================= */
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 10px 15px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    margin-left: 8px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+.view {
+
+    background: var(--purple);
+}
+
+
+.view:hover {
+
+    background: var(--purple-dark);
+
+    transform: translateY(-1px);
+}
+
+
+.delete {
+
+    background: var(--red);
+}
+
+
+.delete:hover {
+
+    background: #c97575;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESULTS PAGE
+   ========================================= */
+
+.winner {
+
+    background:
+        linear-gradient(
+            135deg,
+            #eee7f6,
+            #fae9f0
+        );
+
+    color: var(--purple-dark);
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 25px rgba(120, 90, 140, 0.08);
+
+    border: 1px solid #eadfeb;
+}
+
+
+.winner h2 {
+
+    font-size: 30px;
+
+    margin: 12px;
+
+    color: var(--purple-dark);
+}
+
+
+.winner .score {
+
+    color: var(--purple-dark);
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+
+/* =========================================
+   RANKING
+   ========================================= */
+
+.rank {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #fbf9fc;
+
+    margin: 15px 0;
+
+    padding: 16px;
+
+    border-radius: 11px;
+
+    border: 1px solid var(--border);
+
+    transition: 0.25s ease;
+}
+
+
+.rank:hover {
+
+    transform: translateX(4px);
+
+    background: #f8f4fb;
+}
+
+
+.rank span {
+
+    font-weight: bold;
+}
+
+
+.first {
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf8f1,
+            #f3faf6
+        );
+
+    border-color: #d4ebdc;
+}
+
+
+/* =========================================
+   AI BOX
+   ========================================= */
+
+.ai {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f3fa,
+            #fcf0f5
+        );
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    line-height: 1.8;
+
+    border: 1px solid var(--border);
+}
+
+
+.ai h3 {
+
+    color: var(--pink-dark);
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   WARNING
+   ========================================= */
+
+.warning {
+
+    background: var(--yellow-light);
+
+    padding: 20px;
+
+    border-radius: 11px;
+
+    border-left: 6px solid var(--yellow);
+
+    line-height: 1.7;
+}
+
+
+.warning h3 {
+
+    color: #9b783d;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   RESULTS BUTTONS
+   ========================================= */
+
+.buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+
+.buttons .btn {
+
+    flex: 1;
+}
+
+
+.save {
+
+    background:
+        linear-gradient(
+            135deg,
+            #79b89a,
+            #67a986
+        );
+}
+
+
+.new {
+
+    background:
+        linear-gradient(
+            135deg,
+            #a78bca,
+            #d6a4b9
+        );
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+
+        padding: 18px 5%;
+    }
+
+
+    nav ul {
+
+        gap: 18px;
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 6%;
+    }
+
+
+    .hero-text {
+
+        max-width: 700px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 42px;
+    }
+
+
+    .hero-image {
+
+        width: 300px;
+
+        height: 300px;
+
+        font-size: 100px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .container {
+
+        width: 94%;
+
+        margin: 30px auto;
+    }
+
+
+    .card {
+
+        padding: 25px;
+
+        border-radius: 16px;
+    }
+
+
+    h1 {
+
+        font-size: 30px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 36px;
+    }
+
+
+    .hero-text p {
+
+        font-size: 16px;
+    }
+
+
+    .hero-image {
+
+        width: 250px;
+
+        height: 250px;
+
+        font-size: 80px;
+    }
+
+
+    .item {
+
+        flex-direction: column;
+    }
+
+
+    .removeBtn {
+
+        width: 100%;
+    }
+
+
+    .weight-item {
+
+        gap: 15px;
+    }
+
+
+    table {
+
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+
+    .history-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .history-item .result {
+
+        text-align: left;
+
+        width: 100%;
+    }
+
+
+    .history-item button {
+
+        margin-left: 0;
+
+        margin-right: 8px;
+
+        margin-top: 8px;
+    }
+
+
+    .winner {
+
+        padding: 30px 20px;
+    }
+
+
+    .winner h2 {
+
+        font-size: 24px;
+    }
+
+
+    .winner .score {
+
+        font-size: 45px;
+    }
+
+
+    .buttons {
+
+        flex-direction: column;
+    }
+}
+
+
+/* =========================================
+   SMALL ANIMATION
+   ========================================= */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(8px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+.card,
+.hero-text,
+.hero-image,
+.history-item {
+
+    animation: fadeIn 0.5s ease;
+}
